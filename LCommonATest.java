@@ -11,11 +11,13 @@ class LCommonATest {
 	@Test
 	void TestNode(){
         Node testNode = new Node(2);
+        // Node constructs correctly 
         assertEquals(2, testNode.data);
-        
+        //Node constructs correctly with 0 param
         Node testNode2 = new Node(0);
         assertEquals(0, testNode2.data);
         
+        //Node left and right are null for new nodes
         assertEquals(null, testNode.left);
         assertEquals(null, testNode.right);
         
